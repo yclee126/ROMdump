@@ -127,7 +127,7 @@ void loop() {
     delay(10);
   } while (Serial.available() && Serial.read());
   
-  Serial.println("Type your ROM size in Mbit. Maximum is 255");
+  Serial.println("Type your ROM size in Mbit.");
   Serial.println("");
   while (!Serial.available()) {
   }
