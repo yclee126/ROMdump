@@ -43,7 +43,7 @@ void startDump(uint8_t* romSizeMb) {
       delayMicroseconds(1);
       
 #ifdef WORDMODE
-      if(adr%1 == 0){
+      if(adr%2 == 0){
 #endif
         for (uint8_t i = 16; i < 24; i ++) { // count by 1bit
           bitWrite(buf[a], i-16, digitalRead(i));
